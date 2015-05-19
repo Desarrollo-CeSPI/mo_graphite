@@ -1,0 +1,12 @@
+name             'mo_graphite'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures mo_graphite'
+long_description 'Installs/Configures mo_graphite'
+version          '1.0.0'
+
+depends   'graphite',         '~> 1.0.2'
+depends   'nginx',            '~> 2.7.4'
+depends   'mysql2_chef_gem',  '~> 1.0.1'
+depends   'database',         '~> 4.0.3'
