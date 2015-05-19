@@ -4,7 +4,7 @@ maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'
 description      'Installs/Configures mo_graphite'
 long_description 'Installs/Configures mo_graphite'
-version          '1.0.0'
+version          '1.1.0'
 
 depends   'graphite',         '~> 1.0.2'
 depends   'nginx',            '~> 2.7.4'
