@@ -5,6 +5,10 @@ end
 
 python_pip "MySQL-python"
 
+%w(libldap2-dev libsasl2-dev libssl-dev).each {|p| package p}
+
+python_pip "python-ldap"
+
 db_connection = {host: node['mo_graphite']['db']['host'], 
                  username: node['mo_graphite']['db']['superuser'], 
                  password: node['mo_graphite']['db']['superuser_password'] || node['mysql']['server_root_password']
